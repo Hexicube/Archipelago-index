@@ -1,5 +1,4 @@
-name = "trombone"
-display_name = "Trombone Champ"
+name = "Trombone Champ"
 home = "https://discord.com/channels/731205301247803413/1467852123835469854"
 default_url = "https://github.com/Hexicube/APTromboneChamp/releases/download/{{version}}/trombone.apworld"
 
