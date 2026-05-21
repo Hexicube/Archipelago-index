@@ -2,3 +2,17 @@ Trombone Champ:
   goal: 0
   goal_track: "Sailor's Hornpipe"
   max_diff: 10
+  fuzz_constraints:
+  # make sure initial rating is not below goal rating
+  - option: rating
+    if_value: 3
+    then:
+      initial_rating: 3
+  - option: rating
+    if_value: 2
+    then:
+      initial_rating: random-range-2-3
+  - option: rating
+    if_value: 1
+    then:
+      initial_rating: random-range-1-3
