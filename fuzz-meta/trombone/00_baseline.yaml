@@ -1,1 +1,48 @@
-Trombone Champ: {}
+Trombone Champ:
+  fuzz_constraints:
+  # make sure max_diff is higher than min_diff
+  - option: min_diff
+    if_value: 9
+    then:
+      max_diff: 10
+  - option: min_diff
+    if_value: 8
+    then:
+      max_diff: random-range-9-10
+  - option: min_diff
+    if_value: 7
+    then:
+      max_diff: random-range-8-10
+  - option: min_diff
+    if_value: 6
+    then:
+      max_diff: random-range-7-10
+  - option: min_diff
+    if_value: 5
+    then:
+      max_diff: random-range-6-10
+  - option: min_diff
+    if_value: 4
+    then:
+      max_diff: random-range-5-10
+  - option: min_diff
+    if_value: 3
+    then:
+      max_diff: random-range-4-10
+  - option: min_diff
+    if_value: 2
+    then:
+      max_diff: random-range-3-10
+  # make sure initial rating is not below goal rating
+  - option: rating
+    if_value: 3
+    then:
+      initial_rating: 3
+  - option: rating
+    if_value: 2
+    then:
+      initial_rating: random-range-2-3
+  - option: rating
+    if_value: 1
+    then:
+      initial_rating: random-range-1-3
